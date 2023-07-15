@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import ContentDivison from './ContentDivision';
 
 function ListWithArrows() {
   const data = [
@@ -7,10 +8,10 @@ function ListWithArrows() {
     { title: 'Furniture Layout' },
   ];
   return (
-    <ul className='py-28 border-b-2 border-zinc-500'>
+    <ContentDivison>
       {data.map((el, idx) => {
         return (
-          <li
+          <div
             key={el.title}
             className={` ${
               idx === 0 ? '' : ' border-zinc-500 border-t-2'
@@ -29,10 +30,10 @@ function ListWithArrows() {
               />
               <span className='absolute'>Arrow</span>
             </div>
-          </li>
+          </div>
         );
       })}
-    </ul>
+    </ContentDivison>
   );
 }
 

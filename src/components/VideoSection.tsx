@@ -1,8 +1,9 @@
 import Button from './Button';
+import ContentDivison from './ContentDivision';
 
 function VideoSection() {
   return (
-    <section className='flex justify-between py-28 border-b-2 border-zinc-500'>
+    <ContentDivison className='flex justify-between'>
       <div className='w-1/3'>
         <h2 className='text-zinc-500 text-5xl'>
           Capture
@@ -31,7 +32,7 @@ function VideoSection() {
           </div>
         </div>
       </div>
-    </section>
+    </ContentDivison>
   );
 }
 

@@ -1,4 +1,5 @@
 import Button from './Button';
+import ContentDivison from './ContentDivision';
 
 /* eslint-disable react/no-unescaped-entities */
 function AboutUsSection() {
@@ -8,7 +9,7 @@ function AboutUsSection() {
     { number: '180K', title: 'Happy customers' },
   ];
   return (
-    <section className='border-b-2 flex  justify-between border-zinc-500 py-28'>
+    <ContentDivison className=' flex  justify-between'>
       <div>
         <img src='/couch-1.jpg' alt='couch' />
       </div>
@@ -40,7 +41,7 @@ function AboutUsSection() {
           <Button text='About Us' />
         </div>
       </aside>
-    </section>
+    </ContentDivison>
   );
 }
 

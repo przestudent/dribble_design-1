@@ -1,8 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
 import Image from 'next/image';
+import ContentDivison from './ContentDivision';
 function Main() {
   return (
-    <main className='py-14 border-b-2 border-zinc-600 '>
+    <ContentDivison>
       <h1 className='text-[11rem] leading-[7rem]'>
         <div>
           Transfo
@@ -15,7 +16,7 @@ function Main() {
         </div>
         <div>your space</div>
       </h1>
-    </main>
+    </ContentDivison>
   );
 }
 

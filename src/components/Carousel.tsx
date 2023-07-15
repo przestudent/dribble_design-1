@@ -1,9 +1,10 @@
 import Image from 'next/image';
+import ContentDivison from './ContentDivision';
 
 function Carousel() {
   const count = [1, 2, 3, 4];
   return (
-    <section className=' border-b-2 border-zinc-500 py-28'>
+    <ContentDivison>
       <div className='text-zinc-500 flex justify-between py-28 items-center'>
         <h2 className=' text-3xl'>
           Decorate{' '}
@@ -34,7 +35,7 @@ function Carousel() {
           );
         })}
       </div>
-    </section>
+    </ContentDivison>
   );
 }
 

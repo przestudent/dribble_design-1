@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.gradient-sphere {
+    background: rgb(248, 219, 182);
+    background: radial-gradient(circle, rgba(248, 219, 182, 1) 0%, rgba(154, 81, 196, 1) 50%, rgba(236, 121, 90, 1) 100%);
+    -webkit-box-shadow: 2px 0px 50px 0px rgba(163, 94, 195, 1);
+    -moz-box-shadow: 2px 0px 50px 0px rgba(163, 94, 195, 1);
+    box-shadow: 2px 0px 50px 0px rgba(163, 94, 195, 1);
+}
+
+.text-gradient {
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
