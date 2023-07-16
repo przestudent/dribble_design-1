@@ -1,23 +1,22 @@
-import AboutUsSection from '@/components/AboutUsSection';
-import Carousel from '@/components/Carousel';
-import ListWithArrows from '@/components/ListWithArrows';
-import Main from '@/components/Main';
-import Navbar from '@/components/Navbar';
-import StartProject from '@/components/StartProject';
-import VideoSection from '@/components/VideoSection';
-import Image from 'next/image';
+import Link from 'next/link';
 
-export default function Home() {
+function LandingPage() {
   return (
-    <>
-      <Navbar />
-      <Main />
-      <AboutUsSection />
-      <VideoSection />
-      <ListWithArrows />
-      <Carousel />
-      <StartProject />
-      <Navbar />
-    </>
+    <div className='w-[100vw] h-[100vh] grid grid-cols-1 grid-rows-1 items-center'>
+      <img src='/bg.png' className='col-start-1 col-end-2' />
+      <div className='flex flex-col text-center col-start-1 col-end-2 '>
+        <Link className='text-7xl border-slate-50 border-2' href={'/furniture'}>
+          Check it out
+        </Link>
+        <a
+          className='text-3xl text-pink-500'
+          href='https://dribbble.com/shots/21753130-Int-rieur-Interior-Design-Agency-Landing-Page-Website'
+        >
+          Original Dribble
+        </a>
+      </div>
+    </div>
   );
 }
+
+export default LandingPage;

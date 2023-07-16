@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import ContentDivison from './ContentDivision';
+import PhotoCard from '@/lib/PhotoCard';
 
 function Carousel() {
   const count = [1, 2, 3, 4];
@@ -23,16 +24,7 @@ function Carousel() {
       </div>
       <div className='grid justify-items-center items-center justify-between grid-cols-4'>
         {count.map((e) => {
-          return (
-            <Image
-              alt='couch'
-              width={305}
-              height={90}
-              className=' aspect-[9/16]'
-              src={'/couch-1.jpg'}
-              key={e}
-            />
-          );
+          return <PhotoCard key={e} />;
         })}
       </div>
     </ContentDivison>
